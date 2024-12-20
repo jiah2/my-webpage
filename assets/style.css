@@ -20,8 +20,9 @@ body{
     overflow-x: hidden;
     background-color: #0c131c;
     color: #e5eaf5;
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
+    padding: 20px;
 }
 
 header{
@@ -72,6 +73,12 @@ nav a.active{
     border-bottom: 3px solid #845bb3;
 }
 
+@media only screen and (max-width: 768px) {
+    body {
+      font-size: 16px;   
+      padding: 10px; 
+    }
+}
 @media(max-width:995px){
     nav{
         position: absolute;
