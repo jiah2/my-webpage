@@ -138,7 +138,7 @@ body {
     margin-top: 10px; /* Space between image/video and description */
     padding: 5px;
 }
-
+@media (max-width: 768px) {
 .description,
     .description2,
     .description3,
@@ -152,7 +152,7 @@ body {
         padding: 3px; /* Reduce padding on smaller screens */
          text-align: left;
     }
-
+}          
 .responsive-img, .responsive-img2, .responsive-img3, .responsive-img4,
 .responsive-img5, .responsive-img6, .responsive-img7, .responsive-img8,
 .responsive-img9, .responsive-img10, .responsive-img11, .responsive-img12,
