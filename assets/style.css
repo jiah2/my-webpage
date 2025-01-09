@@ -48,13 +48,14 @@ iframe {
 .project-item4 img,
 .project-item5 img,
 .project-item6 img {
-    width: 100%;
-    max-width: 300px; 
+   width: 100%;
+    max-width: 220px; 
     height: auto; 
-    border-radius: 10px; 
-    border: 2px solid #845bb3; 
-    transition: transform 0.3s ease; 
-    margin: 0 auto; 
+    border-radius: 10px;
+    border: 2px solid #845bb3;
+    transition: 0.3s ease;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 
@@ -63,7 +64,7 @@ iframe {
 .project-item4 img:hover,
 .project-item5 img:hover,
 .project-item6 img:hover {
-    transform: scale(1.05); 
+    transform: scale(1.1); 
 }
 
 
@@ -88,14 +89,6 @@ iframe {
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    }
-
-    .project-item img,
-    .project-item2 img,
-    .project-item4 img,
-    .project-item5 img,
-    .project-item6 img {
-        max-width: 100%; 
     }
 
     .project-item iframe,
