@@ -65,40 +65,40 @@ body {
     }
 }
 
-/* Ensure proper grid layout */
+/* Grid layout for the container */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexibly fit items */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto-resizing grid */
     gap: 20px; /* Space between items */
+    margin-top: 30px;
 }
 
-/* Make sure the images and videos are responsive */
-.grid-container img,
-.grid-container iframe {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px;
-    object-fit: cover; /* Ensure the content fills the container */
-    transition: 0.3s ease;
-    display: block; /* Removes extra spacing */
-    margin: 0 auto; /* Center the content */
+/* Styling for both images and iframes */
+.grid-container iframe,
+.grid-container img {
+    width: 100%; /* Ensure both iframe and image take the full width */
+    height: 100%; /* Ensures the content stretches to fit its container */
+    border-radius: 10px; /* Optional: rounded corners */
+    object-fit: cover; /* Ensures content fills its container and maintains aspect ratio */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    display: block;
+    max-width: 100%;
 }
 
-/* Hover effect */
-.grid-container img:hover,
-.grid-container iframe:hover {
-    transform: scale(1.1);
+/* Hover effect for images and videos */
+.grid-container iframe:hover,
+.grid-container img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
-/* For mobile devices (smaller screens) */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* More compact layout on mobile */
-        gap: 15px; /* Reduced gap between items */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid items on mobile */
+        gap: 15px; /* Reduced gap for mobile */
     }
-
-    .grid-container img,
-    .grid-container iframe {
+    .grid-container iframe,
+    .grid-container img {
         max-width: 100%;
         height: auto;
     }
