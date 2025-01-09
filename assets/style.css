@@ -97,10 +97,15 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid items on mobile */
         gap: 15px; /* Reduced gap for mobile */
     }
+    
+    /* Styling for images and iframes on mobile */
     .grid-container iframe,
     .grid-container img {
         max-width: 100%; /* Ensure images and iframes don't overflow */
         height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Rounded corners */
+        border: 2px solid #845bb3; /* Add border to images and iframes */
+        object-fit: cover; /* Ensures content fills the container */
     }
 }
 
@@ -110,7 +115,7 @@ body {
     max-width: 220px; /* Limit max width for smaller screens */
     height: auto; /* Ensure the height scales properly */
     border-radius: 10px;
-    border: 2px solid #845bb3; /* Similar border to the gallery */
+    border: 2px solid #845bb3; /* Add border for desktop */
     transition: 0.3s ease; /* Smooth transition for hover effects */
     object-fit: cover; /* Ensures images/videos fill the container */
     margin-bottom: 20px; /* Space at the bottom like in the gallery */
@@ -120,12 +125,6 @@ body {
     transform: scale(1.1); /* Hover effect similar to gallery */
 }
 
-@media (max-width: 768px) {
-    /* Ensures images resize properly on mobile */
-    .grid-container img, .grid-container iframe {
-        max-width: 100%; /* Make sure items are responsive */
-    }
-}
 
 .responsive-img, .responsive-img2, .responsive-img3, .responsive-img4,
 .responsive-img5, .responsive-img6, .responsive-img7, .responsive-img8,
