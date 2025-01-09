@@ -134,7 +134,7 @@ body {
 .description8 {
     font-size: 1.4rem;
     color: #e5eaf5; /* Light color for description */
-    text-align: justify; 
+    text-align: left; 
     margin-top: 10px; /* Space between image/video and description */
     padding: 5px;
 }
