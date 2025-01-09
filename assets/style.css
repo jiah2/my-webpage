@@ -53,6 +53,14 @@ body {
     }
 }
 
+/* Increase font size for mobile screens */
+@media (max-width: 768px) {
+    .typing-text {
+        font-size: 28px; /* Adjust this as needed */
+    }
+}
+
+
 .grid-container img {
     width: 100%; 
     max-width: 100%; 
