@@ -63,7 +63,10 @@ body {
     50% {
         border-color: #845bb3;
     }
-    
+    100% {
+        border-color: transparent;
+    }
+}
 .grid-container img {
     width: 100%; 
     max-width: 100%; 
