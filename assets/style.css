@@ -131,6 +131,55 @@ body {
     margin-top: 10px; /* Space between image/video and description */
     padding: 5px;
 }
+.description2 {
+    font-size: 1.4rem;
+    color: #e5eaf5; /* Light color for description */
+    text-align: center; /* Center the text below images and videos */
+    margin-top: 10px; /* Space between image/video and description */
+    padding: 5px;
+}
+.description3 {
+    font-size: 1.4rem;
+    color: #e5eaf5; /* Light color for description */
+    text-align: center; /* Center the text below images and videos */
+    margin-top: 10px; /* Space between image/video and description */
+    padding: 5px;
+}
+.description4 {
+    font-size: 1.4rem;
+    color: #e5eaf5; /* Light color for description */
+    text-align: center; /* Center the text below images and videos */
+    margin-top: 10px; /* Space between image/video and description */
+    padding: 5px;
+}
+.description5 {
+    font-size: 1.4rem;
+    color: #e5eaf5; /* Light color for description */
+    text-align: center; /* Center the text below images and videos */
+    margin-top: 10px; /* Space between image/video and description */
+    padding: 5px;
+}
+.description6 {
+    font-size: 1.4rem;
+    color: #e5eaf5; /* Light color for description */
+    text-align: center; /* Center the text below images and videos */
+    margin-top: 10px; /* Space between image/video and description */
+    padding: 5px;
+}
+.description7 {
+    font-size: 1.4rem;
+    color: #e5eaf5; /* Light color for description */
+    text-align: center; /* Center the text below images and videos */
+    margin-top: 10px; /* Space between image/video and description */
+    padding: 5px;
+}
+.description8 {
+    font-size: 1.4rem;
+    color: #e5eaf5; /* Light color for description */
+    text-align: center; /* Center the text below images and videos */
+    margin-top: 10px; /* Space between image/video and description */
+    padding: 5px;
+}
 
 .responsive-img, .responsive-img2, .responsive-img3, .responsive-img4,
 .responsive-img5, .responsive-img6, .responsive-img7, .responsive-img8,
