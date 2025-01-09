@@ -29,56 +29,30 @@ body {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
-    display: inline-block;
     position: relative;
+    display: inline-block;
 }
 
 .typing-text span {
     position: relative;
     display: inline-block;
-    padding-right: 10px; /* Adjust if needed */
 }
 
 .typing-text span::before {
     content: "Vocalist";
     color: #845bb3;
-    animation: words 5s infinite;
     position: absolute;
     top: 0;
     left: 0;
+    animation: words 20s infinite;
 }
 
 @keyframes words {
-    0% {
-        content: "Vocalist";
-    }
-    25% {
-        content: "Performer";
-    }
-    50% {
-        content: "Singer";
-    }
-    75% {
-        content: "Artist";
-    }
-    100% {
+    0%, 100% {
         content: "Vocalist";
     }
 }
 
-@keyframes cursor {
-    0% {
-        border-color: transparent;
-    }
-    50% {
-        border-color: #845bb3;
-    }
-    100% {
-        border-color: transparent;
-    }
-}
-
-  
 .grid-container img {
     width: 100%; 
     max-width: 100%; 
