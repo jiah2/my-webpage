@@ -65,34 +65,35 @@ body {
     }
 }
 
-
-/* Ensure images in Projects section are responsive */
-.projects .project-image,
-.projects .project-video {
+.grid-container img,
+.grid-container iframe {
     width: 100%;
-    max-width: 220px; 
-    height: auto; 
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    border: 2px solid #845bb3;
-    transition: 0.3s ease;
+    display: block;
+    margin: 0 auto;
     object-fit: cover;
-    margin-bottom: 20px;
+    transition: 0.3s ease;
 }
 
-/* Hover effect for the images and videos in Projects */
-.projects .project-image:hover,
-.projects .project-video:hover {
+/* Add hover effect for images/videos */
+.grid-container img:hover,
+.grid-container iframe:hover {
     transform: scale(1.1);
 }
 
-/* Responsive adjustments for the projects section */
 @media (max-width: 768px) {
-    .projects .project-image,
-    .projects .project-video {
-        max-width: 100%; 
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .grid-container img,
+    .grid-container iframe {
+        max-width: 100%;
     }
 }
-
 
 
 .responsive-img, .responsive-img2, .responsive-img3, .responsive-img4,
