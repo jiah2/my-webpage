@@ -150,6 +150,7 @@ body {
         font-size: 1.2rem; /* Reduce font size for smaller screens */
         margin-top: 8px; /* Reduce space between content and description */
         padding: 3px; /* Reduce padding on smaller screens */
+         text-align: left;
     }
 
 .responsive-img, .responsive-img2, .responsive-img3, .responsive-img4,
