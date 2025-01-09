@@ -25,6 +25,61 @@ body {
     padding: 20px;
 }
 
+.responsive-img, .responsive-img2, .responsive-img3, .responsive-img4,
+.responsive-img5, .responsive-img6, .responsive-img7, .responsive-img8,
+.responsive-img9, .responsive-img10, .responsive-img11, .responsive-img12,
+.responsive-img13, .responsive-img14, .responsive-img15, .responsive-img16,
+.responsive-img17, .responsive-img18, .responsive-img19, .responsive-img20,
+.responsive-img21, .responsive-img22, .responsive-img23, .responsive-img24 {
+    width: 100%;
+    max-width: 220px; 
+    height: auto; 
+    border-radius: 10px;
+    border: 2px solid #845bb3;
+    transition: 0.3s ease;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.responsive-img:hover,
+.responsive-img2:hover,
+.responsive-img3:hover,
+.responsive-img4:hover,
+.responsive-img5:hover,
+.responsive-img6:hover,
+.responsive-img7:hover,
+.responsive-img8:hover,
+.responsive-img9:hover,
+.responsive-img10:hover,
+.responsive-img11:hover,
+.responsive-img12:hover,
+.responsive-img13:hover,
+.responsive-img14:hover,
+.responsive-img15:hover,
+.responsive-img16:hover,
+.responsive-img17:hover,
+.responsive-img18:hover,
+.responsive-img19:hover,
+.responsive-img20:hover,
+.responsive-img21:hover,
+.responsive-img22:hover,
+.responsive-img23:hover,
+.responsive-img24:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .responsive-img, .responsive-img2, .responsive-img3, .responsive-img4,
+    .responsive-img5, .responsive-img6, .responsive-img7, .responsive-img8,
+    .responsive-img9, .responsive-img10, .responsive-img11, .responsive-img12,
+    .responsive-img13, .responsive-img14, .responsive-img15, .responsive-img16,
+    .responsive-img17, .responsive-img18, .responsive-img19, .responsive-img20,
+    .responsive-img21, .responsive-img22, .responsive-img23, .responsive-img24 {
+        max-width: 150px; 
+        margin-bottom: 15px;
+    }
+
+
 header {
     margin-top: 20px;
     position: fixed;
@@ -71,7 +126,7 @@ nav a.active {
     border-bottom: 3px solid #845bb3;
 }
 
-/* Responsive Menu for Mobile */
+
 .nav-toggle {
     display: none;
     font-size: 2.5rem;
@@ -159,7 +214,7 @@ span {
     transform: scale(1.05);
 }
 
-/* Social Icons */
+
 .social-icons a {
     display: inline-flex;
     justify-content: center;
@@ -182,7 +237,6 @@ span {
     box-shadow: 0 0 25px #845bb3;
 }
 
-/* Button Styles */
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -204,7 +258,7 @@ span {
     box-shadow: 0 0 25px #845bb3;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 1000px) {
     .home {
         flex-direction: column;
