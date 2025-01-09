@@ -75,8 +75,8 @@ body {
     .responsive-img13, .responsive-img14, .responsive-img15, .responsive-img16,
     .responsive-img17, .responsive-img18, .responsive-img19, .responsive-img20,
     .responsive-img21, .responsive-img22, .responsive-img23, .responsive-img24 {
-        max-width: 150px; 
-        margin-bottom: 15px;
+        max-width: 100%; 
+    
     }
 
 
