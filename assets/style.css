@@ -31,6 +31,7 @@ body {
     min-width: 280px;
     position: relative;
     display: inline-block;
+    overflow: visible; /* Ensure it's not clipped */
 }
 
 .typing-text span {
@@ -45,6 +46,7 @@ body {
     top: 0;
     left: 0;
     animation: words 20s infinite;
+    font-size: inherit; /* Ensure the font-size inherits from the parent */
 }
 
 @keyframes words {
@@ -53,13 +55,15 @@ body {
     }
 }
 
-/* Increase font size for mobile screens */
+/* Make sure it's visible on mobile */
 @media (max-width: 768px) {
     .typing-text {
-        font-size: 28px; /* Adjust this as needed */
+        font-size: 28px; /* Adjust the font-size for mobile */
+    }
+    .home-content h3 {
+        font-size: 2.5rem; /* Adjust h3 size to fit better */
     }
 }
-
 
 .grid-container img {
     width: 100%; 
