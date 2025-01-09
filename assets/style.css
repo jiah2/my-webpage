@@ -77,18 +77,18 @@ body {
 .grid-container iframe,
 .grid-container img {
     width: 100%; /* Ensure both iframe and image take the full width */
-    height: 100%; /* Ensures the content stretches to fit its container */
+    max-width: 100%; /* Prevent stretching beyond the container */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: rounded corners */
     object-fit: cover; /* Ensures content fills its container and maintains aspect ratio */
     transition: transform 0.3s ease; /* Smooth hover effect */
     display: block;
-    max-width: 100%;
 }
 
 /* Hover effect for images and videos */
 .grid-container iframe:hover,
 .grid-container img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
 }
 
 /* Mobile responsiveness */
@@ -99,10 +99,35 @@ body {
     }
     .grid-container iframe,
     .grid-container img {
-        max-width: 100%;
-        height: auto;
+        max-width: 100%; /* Ensure images and iframes don't overflow */
+        height: auto; /* Maintain aspect ratio */
     }
 }
+
+/* Same styling as responsive images for .grid-container media */
+.grid-container img, .grid-container iframe {
+    width: 100%; /* Ensure both iframe and image take the full width */
+    max-width: 220px; /* Limit max width for smaller screens */
+    height: auto; /* Ensure the height scales properly */
+    border-radius: 10px;
+    border: 2px solid #845bb3; /* Similar border to the gallery */
+    transition: 0.3s ease; /* Smooth transition for hover effects */
+    object-fit: cover; /* Ensures images/videos fill the container */
+    margin-bottom: 20px; /* Space at the bottom like in the gallery */
+}
+
+.grid-container img:hover, .grid-container iframe:hover {
+    transform: scale(1.1); /* Hover effect similar to gallery */
+}
+
+@media (max-width: 768px) {
+    /* Ensures images resize properly on mobile */
+    .grid-container img, .grid-container iframe {
+        max-width: 100%; /* Make sure items are responsive */
+    }
+}
+
+
 
 
 .responsive-img, .responsive-img2, .responsive-img3, .responsive-img4,
