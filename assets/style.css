@@ -65,37 +65,34 @@ body {
     }
 }
 
-.grid-container img {
-    width: 100%; 
-    max-width: 100%; 
+
+/* Ensure images in Projects section are responsive */
+.projects .project-image,
+.projects .project-video {
+    width: 100%;
+    max-width: 220px; 
     height: auto; 
-    border-radius: 10px; 
-    display: block;
-    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid #845bb3;
+    transition: 0.3s ease;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
-
-.grid-container iframe {
-    width: 100%; 
-    max-width: 100%;
-    aspect-ratio: 16/9; 
-    border-radius: 10px; 
-    display: block; 
-    margin: 0 auto;
+/* Hover effect for the images and videos in Projects */
+.projects .project-image:hover,
+.projects .project-video:hover {
+    transform: scale(1.1);
 }
 
-
+/* Responsive adjustments for the projects section */
 @media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px; 
-    }
-
-    .grid-container img,
-    .grid-container iframe {
+    .projects .project-image,
+    .projects .project-video {
         max-width: 100%; 
     }
 }
+
 
 
 .responsive-img, .responsive-img2, .responsive-img3, .responsive-img4,
