@@ -24,6 +24,32 @@ body {
     text-align: justify;
     padding: 20px;
 }
+.typing-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span {
+    position: relative;
+}
+
+.typing-text span::before {
+    content: "Vocalist";
+    color: #845bb3;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after {
+    content: "";
+    background-color: #0c131c;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid #0c131c;
+    right: -8px;
+    animation: cursor 0.6s infinite;
+}
 
 
 .grid-container img {
