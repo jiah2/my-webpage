@@ -51,7 +51,19 @@ body {
     animation: cursor 0.6s infinite;
 }
 
-
+@keyframes words {
+    0% {
+        content: "Vocalist";
+    }
+} 
+@keyframes cursor {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #845bb3;
+    }
+    
 .grid-container img {
     width: 100%; 
     max-width: 100%; 
